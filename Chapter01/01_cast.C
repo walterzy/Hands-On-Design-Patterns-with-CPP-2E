@@ -1,3 +1,6 @@
+// Try g++ instead of gcc. gcc is for C and will not give you access to the C++ standard library。
+// or gcc main.cpp -lstdc++ -o main.o
+
 #include <stdlib.h>
 #include <stdint.h>
 #include <iostream>
