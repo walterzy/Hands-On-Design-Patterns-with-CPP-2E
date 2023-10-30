@@ -2,6 +2,7 @@
     "files.associations": {
         "01_cast.C": "cpp",
         "02_dynamic_cast.C": "cpp",
-        "03_empty_base_class.C": "cpp"
+        "03_empty_base_class.C": "cpp",
+        "04_privately_inherited_base.C": "cpp"
     }
 }
