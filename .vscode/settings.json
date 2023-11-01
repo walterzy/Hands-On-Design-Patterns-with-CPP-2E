@@ -3,6 +3,29 @@
         "01_cast.C": "cpp",
         "02_dynamic_cast.C": "cpp",
         "03_empty_base_class.C": "cpp",
-        "04_privately_inherited_base.C": "cpp"
-    }
+        "04_privately_inherited_base.C": "cpp",
+        "01_func_template.C": "cpp",
+        "01a_func_auto.C": "cpp",
+        "02_class_template.C": "cpp",
+        "03_variable_template.C": "cpp",
+        "04_nontype.C": "cpp",
+        "iostream": "cpp",
+        "05a_consteval.C": "cpp",
+        "05b_consteval.C": "cpp",
+        "05c_consteval.C": "cpp",
+        "05d_consteval.C": "cpp",
+        "06a_template_template.C": "cpp",
+        "16-consteval.C": "cpp",
+        "06b_template_template.C": "cpp",
+        "06c_template_template.C": "cpp",
+        "07_whatami.C": "cpp",
+        "02b_class_template.C": "cpp",
+        "16a-Explicit_Specialization.C": "cpp",
+        "16a_Explicit_Specialization.C": "cpp",
+        "17_Partial_Specialization.C": "cpp",
+        "17b_Partial_Specialization.C": "cpp",
+        "08a_variadic_function.C": "cpp",
+        "08b_variadic_function.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

@@ -2,7 +2,24 @@
 #include <iostream>
 #include <type_traits>
 
-template <typename ... T> auto sum(const T& ... x) { return (x + ...); }
+// Base case: This function will print the last parameter.
+void printParams() {
+    std::cout << std::endl;
+}
+
+// Recursive case: This function will print the current parameter and 
+// call itself with the remaining parameters.
+template <typename T, typename... Args>
+void printParams(T first, Args... rest) {
+    std::cout << first << " ";
+    printParams(rest...);
+}
+
+template <typename ... T> auto sum(const T& ... x) { 
+    printParams(x...);
+    return (x + ...); 
+}
+
 
 int main() {
     std::cout << sum(5, 7, 3) << std::endl;
