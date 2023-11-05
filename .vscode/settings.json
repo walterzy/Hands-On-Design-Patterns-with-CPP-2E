@@ -25,7 +25,14 @@
         "17_Partial_Specialization.C": "cpp",
         "17b_Partial_Specialization.C": "cpp",
         "08a_variadic_function.C": "cpp",
-        "08b_variadic_function.C": "cpp"
+        "08b_variadic_function.C": "cpp",
+        "09_variadic_class.C": "cpp",
+        "18-explicit.C": "cpp",
+        "10_variadic_auto.C": "cpp",
+        "19-forward.C": "cpp",
+        "11_lambda.C": "cpp",
+        "12a_lambda_overload14.C": "cpp",
+        "11b_lambda.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

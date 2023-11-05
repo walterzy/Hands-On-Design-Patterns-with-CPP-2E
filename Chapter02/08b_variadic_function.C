@@ -3,7 +3,9 @@
 #include <type_traits>
 
 template <typename T1> auto sum(const T1& x1) { return x1; }
-template <typename T1, typename ... T> auto sum(const T1& x1, const T& ... x) { return x1 + sum(x ...); }
+template <typename T1, typename ... T> auto sum(const T1& x1, const T& ... x) { 
+    return x1 + sum(x ...); 
+}
 
 int main() {
     std::cout << sum(5, 7, 3) << std::endl;

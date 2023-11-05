@@ -2,6 +2,12 @@
 #include <iostream>
 #include <type_traits>
 
+/*
+C++17引入了折叠表达式（fold expression），它是一种用于在编译时对参数包进行递归操作的新特性。
+折叠表达式允许你在编译时展开（fold）参数包的操作，以便在模板编程中更轻松地执行各种操作，
+如求和、连接字符串、逻辑操作等
+*/
+
 // Base case: This function will print the last parameter.
 void printParams() {
     std::cout << std::endl;
