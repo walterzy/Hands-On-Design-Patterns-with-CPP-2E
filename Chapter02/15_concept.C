@@ -2,11 +2,12 @@
 #include <iostream>
 
 template <typename T> class ArrayOf2 {
-    public:
+public:
     T& operator[](size_t i) { return a_[i]; }
     const T& operator[](size_t i) const { return a_[i]; }
     T sum() const requires (requires (T a, T b) { a + b; }) { return a_[0] + a_[1]; }
-    private:
+
+private:
     T a_[2];
 };
 

@@ -9,7 +9,8 @@ template <typename T> struct ListNode {
 
 template <typename T> class ListIterator {
     std::shared_ptr<ListNode<T>> node_;
-    public:
+
+public:
     ListIterator(std::shared_ptr<ListNode<T>> node) : node_(node) {}
     ListIterator(ListNode<T>* node) : node_(node) {}
     T& operator*() { return node_->data; }
@@ -22,7 +23,7 @@ template <typename T> class ListIterator {
 
 template <typename T> class List {
     std::shared_ptr<ListNode<T>> head_;
-    public:
+public:
     List() = default;
     void insert(const T& data) {
         head_.reset(new ListNode<T>{data, head_, nullptr});

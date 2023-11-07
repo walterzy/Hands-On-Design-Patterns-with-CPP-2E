@@ -17,14 +17,14 @@ void Double(Widget* w) {
     for (auto& x : *w) {
         x *= 2;
     }
-    std::cout << "After Double(): " << w->size() << " ";
+    std::cout << "After Double(): " << w->size() << ": ";
     for (auto x : *w) std::cout << x << " ";
     std::cout << std::endl;
 };
 
 int main() {
     std::unique_ptr<Widget> w(WidgetFactory());
-    std::cout << "Initial w: " << w->size() << " ";
+    std::cout << "Initial w: " << w->size() << ": ";
     for (auto x : *w) std::cout << x << " ";
     std::cout << std::endl;
     Double(&*w);

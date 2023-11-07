@@ -9,12 +9,13 @@ struct Widget : public std::vector<int> {
 };
 
 class WidgetProcessor {
-  public:
-  WidgetProcessor(Widget* w) : w_(w) {}
-  Widget* get() { return w_; }
-  ~WidgetProcessor() { /* DO NOT delete w_! */ }
-  private:
-  Widget* w_;	// I do not own w_
+public:
+    WidgetProcessor(Widget* w) : w_(w) {}
+    Widget* get() { return w_; }
+    ~WidgetProcessor() { /* DO NOT delete w_! */ }
+
+private:
+    Widget* w_;	// I do not own w_
 };
 
 void Transmorgrify(Widget* w) {

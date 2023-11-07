@@ -17,14 +17,14 @@ void Consume(Widget&& w) {
     for (auto& x : ww) {
         x *= 2;
     }
-    std::cout << "Widget consumed: " << ww.size() << " ";
+    std::cout << "Widget consumed: " << ww.size() << ": ";
     for (auto x : ww) std::cout << x << " ";
     std::cout << "\nDeleting new widget at " << &ww << std::endl;
 };
 
 int main() {
     Widget w{{1, 2, 3}};
-    std::cout << "Initial w: " << w.size() << " ";
+    std::cout << "Initial w: " << w.size() << ": ";
     for (auto x : w) std::cout << x << " ";
     std::cout << std::endl;
     std::cout << "Calling consume" << std::endl;

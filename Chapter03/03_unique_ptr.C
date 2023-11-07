@@ -23,12 +23,13 @@ struct FancyWidget : public Widget {
 };
 
 class WidgetProcessor {
-  public:
-  WidgetProcessor(std::initializer_list<Widget*> w) : w_(w) {}
-  void print() const { for (const Widget* w : w_) w->print(); }
-  ~WidgetProcessor() { /* DO NOT delete widgets in w_! */ }
-  private:
-  std::vector<Widget*> w_;	// I do not own w_
+public:
+    WidgetProcessor(std::initializer_list<Widget*> w) : w_(w) {}
+    void print() const { for (const Widget* w : w_) w->print(); }
+    ~WidgetProcessor() { /* DO NOT delete widgets in w_! */ }
+
+private:
+    std::vector<Widget*> w_;	// I do not own w_
 };
 
 int main() {
@@ -38,4 +39,3 @@ int main() {
     wp.print();
     std::cout << "widgets deleted by the owner" << std::endl;
 }
-
