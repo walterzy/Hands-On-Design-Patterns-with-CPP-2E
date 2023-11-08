@@ -14,6 +14,10 @@ void ModifyData(std::ranges::view auto data) {
   for (auto& x : data) ++x;
 };
 
+void ModifyData(std::ranges::range auto data) {
+  for (auto& x : data) ++x;
+};
+
 int main() {
     std::string s = "abc";
     UseData(std::views::all(s));

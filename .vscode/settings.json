@@ -125,7 +125,14 @@
         "04_factory.C": "cpp",
         "12_unique_ptr.C": "cpp",
         "12_shared_ptr.C": "cpp",
-        "05_move.C": "cpp"
+        "05_move.C": "cpp",
+        "07_string_builder.C": "cpp",
+        "13_std_optional.C": "cpp",
+        "08_string_factory.C": "cpp",
+        "09_string_view.C": "cpp",
+        "13_std_move.C": "cpp",
+        "10_span.C": "cpp",
+        "11_ranges.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
